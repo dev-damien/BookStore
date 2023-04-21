@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+html {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -17,18 +23,28 @@ a {
 /* -------------- HEADER ------------------------------------------- */
 
 #logo {
-  width:100px;
+  width: 100px;
   display: inline;
 }
 
-#nav_bar {
+/* entire navbar including logo */
+.nav_bar {
+  padding: 20px;
+  background-color: #6B4F4F;
   display: flex;
-  justify-content: space-evenly;
+  /* to move logo and menu to left and right side */
+  justify-content: space-between;
   align-items: center;
 }
 
+/* only the menu */
+.nav_main {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
 .nav_item a {
-  text-decoration: none;
+  color: #FFF3E4;
 }
 
 .nav_item {
