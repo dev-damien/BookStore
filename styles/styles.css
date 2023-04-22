@@ -4,10 +4,8 @@
   margin: 0;
 }
 
-html {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
+body {
+  background-color: #6B4F4F;
 }
 
 li {
@@ -22,37 +20,129 @@ a {
 
 /* -------------- HEADER ------------------------------------------- */
 
+/* --------- LOGO ----------- */
 #logo {
   width: 100px;
   display: inline;
 }
 
+/* --------- MAIN NAVBAR ----------- */
 /* entire navbar including logo */
-.nav_bar {
-  padding: 20px;
-  background-color: #6B4F4F;
+.navbar_header {
+  padding: 6px;
+  padding-left: 21px;
+  padding-right: 12px;
+  background-color: #483434;
   display: flex;
   /* to move logo and menu to left and right side */
   justify-content: space-between;
   align-items: center;
 }
 
-/* only the menu */
+/* only the menu with links*/
 .nav_main {
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 5px;
 }
 
-.nav_item a {
+.nav_main li:hover {
+  border-radius: 6px;
+  background-color: #6B4F4F;
+  transition: 0.2s;
+}
+
+/* main entries in the menu */
+.nav_item {
+  position: relative;
+  padding: 12px;
+}
+
+.nav_item>a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
   color: #FFF3E4;
+  height: 100%;
+  text-align: center;
+  vertical-align: end;
+}
+
+/* --------- SUB NAVBAR----------- */
+
+/* sub entries in the menu */
+.nav_sub>li>a {
+  font-size: 16px;
+  color: #EED6C4;
 }
 
 .nav_item {
-  padding: 5px;
+  position: relative;
 }
 
-/* -------------- FOOTER ------------------------------------------- */
+/* submenu of the main menu entries */
+.nav_sub {
+  display: none;
+  background-color: #EED6C4;
+  position: absolute;
+  top: 42px;
+  border: 1px solid black;
+  border-radius: 9px;
+}
 
+/* all entries of sublist except the first one */
+.nav_sub li+li {
+  margin-top: 6px;
+}
+
+.nav_sub li {
+  padding: 9px 12px;
+  width: 8em;
+  text-align: center;
+}
+
+.nav_sub li a {
+  color: #000000;
+  font-size: 18px;
+}
+
+/* submenu element when hovered over */
+.nav_sub li:hover {
+  background-color: #FFF3E4;
+}
+
+/* submenu when hovered over the coresponding main entry */
+.nav_item:hover .nav_sub {
+  /* element becomes visible */
+  display: block;
+}
+
+
+
+/* -------------- FOOTER ------------------------------------------- */
+/* conatiner for items */
+.navbar_footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #EED6C4;
+  padding: 6px 12px;
+}
+
+/* items of navbart */
+.navbar_footer li a {
+  font-size: 18px;
+  color: #333333;
+  padding: 3px 6px;
+}
+
+/* when hovered over item in navbar */
+.navbar_footer li:hover a{
+  color: black;
+  background-color: #e0c7b4;
+  border-radius: 6px;
+}
 
 
 /* -------------- HOMEPAGE ------------------------------------------- */
@@ -68,3 +158,26 @@ a {
 
 
 /* -------------- BOOK DETAIL PAGE ------------------------------------------- */
+
+
+
+/* -------------- NOT IMPLEMENTED PAGE ------------------------------------------- */
+#not_implemented_headline {
+  color: #EED6C4;
+}
+
+#go_back {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  background-color: orangered;
+  border-radius: 6px;
+  padding: 6px;
+  margin: 6px;
+}
+
+#go_back:hover {
+  background-color: red;
+  color: whitesmoke;
+
+}
