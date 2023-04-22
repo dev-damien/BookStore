@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #6B4F4F;
 }
@@ -31,7 +36,7 @@ a {
 .navbar_header {
   padding: 6px;
   padding-left: 21px;
-  padding-right: 12px;
+  padding-right: 60px;
   background-color: #483434;
   display: flex;
   /* to move logo and menu to left and right side */
@@ -89,7 +94,9 @@ a {
   top: 42px;
   border: 1px solid black;
   border-radius: 9px;
+  z-index: 10;
 }
+
 /* all entries of sublist except the first one */
 .nav_sub li+li {
   margin-top: 6px;
@@ -126,7 +133,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   background-color: #EED6C4;
-  padding: 6px 12px;
+  padding: 12px 12px 30px 12px;
 }
 
 /* items of navbart */
@@ -137,7 +144,7 @@ a {
 }
 
 /* when hovered over item in navbar */
-.navbar_footer li:hover a{
+.navbar_footer li:hover a {
   color: black;
   background-color: #e0c7b4;
   border-radius: 6px;
@@ -145,7 +152,7 @@ a {
 
 
 /* -------------- HOMEPAGE ------------------------------------------- */
-#homepage_main {
+main {
   padding: 21px 30px;
 }
 
@@ -175,15 +182,18 @@ a {
 
 .cards {
   display: flex;
+  align-items: center;
   overflow-x: scroll;
   scroll-snap-type: none;
   margin: 12px;
 }
 
 .card {
-  margin: 3px 12px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 3px 12px;
+  margin-bottom: 15px;
   padding-bottom: 21px;
   background: #e5e5e5;
   border-radius: 12px;
@@ -195,7 +205,9 @@ a {
 .card_content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: inherit;
+  padding: 0 6px;
 }
 
 .book_img {
@@ -228,16 +240,70 @@ a {
 /* when hoverd over one card */
 .card:hover {
   background-color: #EED6C4;
-  box-shadow: 0 3px 12px black ;
+  box-shadow: 0 3px 12px black;
 }
 
 .card:hover .card_details {
   background-color: #EED6C4;
 }
 
+/* when hovered over category name */
+.category_title:hover {
+  text-decoration: underline;
+}
+
+/* youtube video container */
+#yt_video {
+  display: flex;
+  justify-content: center;
+}
+
 
 /* -------------- ALL CATEGORIES PAGE ------------------------------------------- */
+#submenu {
+  display: flex;
+  justify-content: space-around;
+  padding: 21px 12px;
+}
 
+#submenu li a{
+  padding: 6px 9px;
+  border: 2px solid black;
+  border-radius: 18px;
+  background-color: #EED6C4;
+  color: black;
+}
+
+#submenu li a:hover{
+  background-color: #bea999;
+}
+
+.sup_category {
+  padding: 12px;
+  padding-top: 0px;
+  background-color: #483434;
+  border-radius: 12px;
+  border: 4px solid black;
+}
+
+.sub_category {
+  display: flex;
+  flex-direction: column;
+}
+
+.sup_category_headline {
+  padding: 3px 12px;
+  color: #EED6C4;
+  border-radius: 0px 0px 6px 6px;
+  border: 4px solid black;
+  position: relative;
+  top: -4px;
+}
+
+.sup_category_headline:hover {
+  background-color: #EED6C4;
+  color: black;
+}
 
 
 /* -------------- CATEGORY PAGE ------------------------------------------- */
