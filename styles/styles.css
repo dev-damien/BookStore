@@ -90,7 +90,6 @@ a {
   border: 1px solid black;
   border-radius: 9px;
 }
-
 /* all entries of sublist except the first one */
 .nav_sub li+li {
   margin-top: 6px;
@@ -146,7 +145,17 @@ a {
 
 
 /* -------------- HOMEPAGE ------------------------------------------- */
+.category {
 
+}
+
+.books_list {
+  display: flex;
+}
+
+.book_img {
+  width: 150px;
+}
 
 
 /* -------------- ALL CATEGORIES PAGE ------------------------------------------- */
