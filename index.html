@@ -11,6 +11,8 @@
     https://www.flaticon.com/
     https://chromedino.com/
     https://www.w3schools.com/css/css3_transitions.asp
+    https://validator.w3.org/
+    https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
 -->
 
 <!-- TODO update readme
@@ -29,97 +31,488 @@
 </head>
 
 <body>
-  <!---------------- HEADER -------------------------------------------------------------------------------------->
+  <!-- ______ HEADER ________________________________________________________________________________________________________________________ -->
   <header>
     <nav class="navbar_header">
       <!-- Main LOGO -->
       <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo of this Bookstore"></a>
 
       <!-- NAVIGATION BAR -->
-      <ul>
-        <div class="nav_main">
-          <li class="nav_item"><a href="index.html">Home</a></li>
-          <li class="nav_item"><a href="html/categories/categories_page.html">All Categories</a></li>
-          <li class="nav_item" id="fiction_menu">
-            <a href="html/categories/fiction/fiction_page.html">Fiction</a>
-            <!-- SUBMENU -->
-            <ul class="nav_sub">
-              <li><a href="html/categories/fiction/">Literary Fiction</a></li>
-              <li><a href="html/categories/fiction/">Romance</a></li>
-              <li><a href="html/categories/fiction/">Science Fiction</a></li>
-              <li><a href="html/categories/fiction/">Fantasy</a></li>
-              <li><a href="html/categories/fiction/">Mystery/Thriller</a></li>
-              <li><a href="html/categories/fiction/">Horror</a></li>
-              <li><a href="html/categories/fiction/">Historical Fiction</a></li>
-              <li><a href="html/categories/fiction/">Young Adult</a></li>
-            </ul>
-          </li>
-          <li class="nav_item" id="nonfiction_menu">
-            <a href="html/categories/non_fiction/non_fiction_page.html">Non-Fiction</a>
-            <!-- SUBMENU -->
-            <ul class="nav_sub">
-              <li><a href="html/categories/non_fiction/">Biographies and Memoirs</a></li>
-              <li><a href="html/categories/non_fiction/">Self-help</a></li>
-              <li><a href="html/categories/non_fiction/">History</a></li>
-              <li><a href="html/categories/non_fiction/">Science and Technology</a></li>
-              <li><a href="html/categories/non_fiction/">Politics and Current Affairs</a></li>
-              <li><a href="html/categories/non_fiction/">Travel</a></li>
-              <li><a href="html/categories/non_fiction/">Cooking and Food</a></li>
-              <li><a href="html/categories/non_fiction/">Business and Finance</a></li>
-              <li><a href="html/categories/non_fiction/">Art and Photography</a></li>
-            </ul>
-          </li>
-          <li class="nav_item" id="children_menu">
-            <a href="html/categories/children/children_page.html">Children's Books</a>
-            <!-- SUBMENU -->
-            <ul class="nav_sub">
-              <li><a href="html/categories/children/">Picture Books</a></li>
-              <li><a href="html/categories/children/">Early Readers</a></li>
-              <li><a href="html/categories/children/">Chapter Books</a></li>
-              <li><a href="html/categories/children/">Middle Grade</a></li>
-              <li><a href="html/categories/children/">Young Adult</a></li>
-            </ul>
-          </li>
-          <li class="nav_item" id="references_menu">
-            <a href="html/categories/references/references_page.html">Reference Books</a>
-            <!-- SUBMENU -->
-            <ul class="nav_sub">
-              <li><a href="html/categories/references/">Dictionaries</a></li>
-              <li><a href="html/categories/references/">Encyclopedias</a></li>
-              <li><a href="html/categories/references/">Atlases</a></li>
-              <li><a href="html/categories/references/">Thesauruses</a></li>
-              <li><a href="html/categories/references/">Almanacs</a></li>
-            </ul>
-          </li>
-          <li class="nav_item" id="textbooks_menu">
-            <a href="html/categories/textbooks/textbooks_page.html">Textbooks</a>
-            <!-- SUBMENU -->
-            <ul class="nav_sub">
-              <li><a href="html/categories/textbooks/">Math and Science</a></li>
-              <li><a href="html/categories/textbooks/">Social Sciences</a></li>
-              <li><a href="html/categories/textbooks/">Humanities</a></li>
-              <li><a href="html/categories/textbooks/">Professional and Technical</a></li>
-            </ul>
-          </li>
-        </div>
+      <ul class="nav_main">
+        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a href="html/categories/categories_page.html">All Categories</a></li>
+        <li class="nav_item" id="fiction_menu">
+          <a href="html/categories/fiction/fiction_page.html">Fiction</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="html/categories/fiction/">Literary Fiction</a></li>
+            <li><a href="html/categories/fiction/">Romance</a></li>
+            <li><a href="html/categories/fiction/">Science Fiction</a></li>
+            <li><a href="html/categories/fiction/">Fantasy</a></li>
+            <li><a href="html/categories/fiction/">Mystery/Thriller</a></li>
+            <li><a href="html/categories/fiction/">Horror</a></li>
+            <li><a href="html/categories/fiction/">Historical Fiction</a></li>
+            <li><a href="html/categories/fiction/">Young Adult</a></li>
+          </ul>
+        </li>
+        <li class="nav_item" id="nonfiction_menu">
+          <a href="html/categories/non_fiction/non_fiction_page.html">Non-Fiction</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="html/categories/non_fiction/">Biographies and Memoirs</a></li>
+            <li><a href="html/categories/non_fiction/">Self-help</a></li>
+            <li><a href="html/categories/non_fiction/">History</a></li>
+            <li><a href="html/categories/non_fiction/">Science and Technology</a></li>
+            <li><a href="html/categories/non_fiction/">Politics and Current Affairs</a></li>
+            <li><a href="html/categories/non_fiction/">Travel</a></li>
+            <li><a href="html/categories/non_fiction/">Cooking and Food</a></li>
+            <li><a href="html/categories/non_fiction/">Business and Finance</a></li>
+            <li><a href="html/categories/non_fiction/">Art and Photography</a></li>
+          </ul>
+        </li>
+        <li class="nav_item" id="children_menu">
+          <a href="html/categories/children/children_page.html">Children's Books</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="html/categories/children/">Picture Books</a></li>
+            <li><a href="html/categories/children/">Early Readers</a></li>
+            <li><a href="html/categories/children/">Chapter Books</a></li>
+            <li><a href="html/categories/children/">Middle Grade</a></li>
+            <li><a href="html/categories/children/">Young Adult</a></li>
+          </ul>
+        </li>
+        <li class="nav_item" id="references_menu">
+          <a href="html/categories/references/references_page.html">Reference Books</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="html/categories/references/">Dictionaries</a></li>
+            <li><a href="html/categories/references/">Encyclopedias</a></li>
+            <li><a href="html/categories/references/">Atlases</a></li>
+            <li><a href="html/categories/references/">Thesauruses</a></li>
+            <li><a href="html/categories/references/">Almanacs</a></li>
+          </ul>
+        </li>
+        <li class="nav_item" id="textbooks_menu">
+          <a href="html/categories/textbooks/textbooks_page.html">Textbooks</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="html/categories/textbooks/">Math and Science</a></li>
+            <li><a href="html/categories/textbooks/">Social Sciences</a></li>
+            <li><a href="html/categories/textbooks/">Humanities</a></li>
+            <li><a href="html/categories/textbooks/">Professional and Technical</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <!---------------- MAIN ---------------------------------------------------------------------------------------->
-  <main>
-    <!-- CATEGORY 1 -->
-    <div class="category">
-      <div class="books_list">
-        <div>
-          <img src="images/logo.png" alt="Image of book xyz" class="book_img"/>
-          <div>This is some test text for the boook</div>
+  <!-- ______ MAIN ________________________________________________________________________________________________________________________ -->
+  <main id="homepage_main">
+    <div class="categories">
+      <!-- CATEGORY 1 -->
+      <section class="category">
+        <div class="category_title_container">
+          <h2 class="category_title">Fiction</h2>
         </div>
-      </div>
+        <ul class="cards">
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- CATEGORY 2 -->
+      <section class="category">
+        <div class="category_title_container">
+          <h2 class="category_title">Non-Fiction</h2>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- CATEGORY 3 -->
+      <section class="category">
+        <div class="category_title_container">
+          <h2 class="category_title">Children's Books</h2>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- CATEGORY 4 -->
+      <section class="category">
+        <div class="category_title_container">
+          <h2 class="category_title">Reference Books</h2>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- CATEGORY 5 -->
+      <section class="category">
+        <div class="category_title_container">
+          <h2 class="category_title">Textbooks</h2>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card_content">
+              <img src="images/books/sapiens.jpeg" alt="Image of book xyz" class="book_img">
+              <div class="card_details">
+                <p class="card_title">Sapiens: A Brief History of Humankind</p>
+                <p class="card_author">Yuval Noah Harari</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
   </main>
 
-  <!---------------- FOOTER -------------------------------------------------------------------------------------->
+  <!-- ______ FOOTER ________________________________________________________________________________________________________________________ -->
   <footer>
     <nav>
       <ul class="navbar_footer">
@@ -134,4 +527,4 @@
   </footer>
 </body>
 
-<html>
+</html>
