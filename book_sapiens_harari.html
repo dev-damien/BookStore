@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sapiens: A Brief Histoy of Humankind</title>
+  <title>Sapiens: A Brief History of Humankind</title>
   <link rel="stylesheet" href="styles/styles.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">Ï
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 
       <!-- NAVIGATION BAR -->
       <ul class="nav_main">
-        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a id="home" href="index.html">Home</a></li>
         <li class="nav_item" id="fiction_menu">
           <a href="fiction_page.html">Fiction</a>
           <!-- SUBMENU -->
@@ -36,7 +37,7 @@
           </ul>
         </li>
         <li class="nav_item" id="nonfiction_menu">
-          <a href="non_fiction_page.html">Non-Fiction</a>
+          <a href="not_implemented_page.html">Non-Fiction</a>
           <!-- SUBMENU -->
           <ul class="nav_sub">
             <li><a href="not_implemented_page.html">Biographies and Memoirs</a></li>
@@ -51,7 +52,7 @@
           </ul>
         </li>
         <li class="nav_item" id="children_menu">
-          <a href="children_page.html">Children's Books</a>
+          <a href="not_implemented_page.html">Children's Books</a>
           <!-- SUBMENU -->
           <ul class="nav_sub">
             <li><a href="not_implemented_page.html">Picture Books</a></li>
@@ -62,7 +63,7 @@
           </ul>
         </li>
         <li class="nav_item" id="references_menu">
-          <a href="references_page.html">Reference Books</a>
+          <a href="not_implemented_page.html">Reference Books</a>
           <!-- SUBMENU -->
           <ul class="nav_sub">
             <li><a href="not_implemented_page.html">Dictionaries</a></li>
@@ -73,7 +74,7 @@
           </ul>
         </li>
         <li class="nav_item" id="textbooks_menu">
-          <a href="textbooks_page.html">Textbooks</a>
+          <a href="not_implemented_page.html">Textbooks</a>
           <!-- SUBMENU -->
           <ul class="nav_sub">
             <li><a href="not_implemented_page.html">Math and Science</a></li>
@@ -89,18 +90,67 @@
   <!-- breadcrumb menu -->
   <nav>
     <ul class="breadcrumb_container">
-      <li><a class="breadcrumb" href="index.html">Home</a></li>
+      <li><a class="breadcrumb breadcrumb_link" href="index.html">Home</a></li>
       <li>></li>
-      <li><a class="breadcrumb" href="index.html">Fiction</a></li>
+      <li><a class="breadcrumb breadcrumb_link" href="not_implemented_page.html">Non-Fiction</a></li>
       <li>></li>
-      <li><a class="breadcrumb" href="index.html">Fiction</a></li>
+      <li><a class="breadcrumb breadcrumb_link" href="not_implemented_page.html">History</a></li>
       <li>></li>
-      <li>Fiction</li>
+      <li><span class="breadcrumb breadcrumb_book">Sapiens: A Brief History of Humankind</span></li>
     </ul>
   </nav>
 
   <!-- ______ MAIN BOOK DETAILS ________________________________________________________________________________________________________________________ -->
   <main>
+    <div class="book_details">
+      <!-- images, price and add to cart button -->
+      <section class="book_container_top">
+        <div class="images_all_container">
+          <img class="image_big" src="images/books/sapiens.jpeg" alt="Cover of Sapiens: A Brief History  of Humankind">
+          <div class="images_small_container">
+            <img class="image_small" src="images/books/sapiens_01.jpg" alt="Preview of one of the pages">
+            <img class="image_small" src="images/books/sapiens_02.jpg" alt="Preview of one of the pages">
+            <img class="image_small" src="images/books/sapiens_03.jpg" alt="Image of the author">
+          </div>
+        </div>
+        <div class="purchase_container">
+          <span class="price">19.99$</span>
+          <button class="btn_add">Add to cart</button>
+        </div>
+      </section>
+
+      <!-- book name and description -->
+      <div class="book_container_bottom">
+        <article class="book_details_container">
+          <h1 class="book_details_title">Sapiens: A Brief History of Humankind</h1>
+          <div class="book_details_description">
+            <section>
+              From a renowned historian comes a groundbreaking narrative of humanity's creation and evolution—a #1
+              international bestseller—that explores the ways in which biology and history have defined us and enhanced
+              our understanding of what it means to be “human.”
+            </section>
+            <section>
+              One hundred thousand years ago, at least six different species of humans inhabited Earth. Yet today there
+              is only one—homo sapiens. What happened to the others? And what may happen to us?
+            </section>
+            <section>
+              Most books about the history of humanity pursue either a historical or a biological approach, but Dr.
+              Yuval Noah Harari breaks the mold with this highly original book that begins about 70,000 years ago with
+              the appearance of modern cognition. From examining the role evolving humans have played in the global
+              ecosystem to charting the rise of empires, Sapiens integrates history and science to reconsider accepted
+              narratives, connect past developments with contemporary concerns, and examine specific events within the
+              context of larger ideas.
+            </section>
+            <section>
+              Dr. Harari also compels us to look ahead, because over the last few decades humans have begun to bend laws
+              of natural selection that have governed life for the past four billion years. We are acquiring the ability
+              to design not only the world around us, but also ourselves. Where is this leading us, and what do we want
+              to become?
+            </section>
+          </div>
+        </article>
+      </div>
+    </div>
   </main>
 
   <!-- ______ FOOTER ________________________________________________________________________________________________________________________ -->
