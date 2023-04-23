@@ -58,6 +58,11 @@ a {
   transition: 0.2s;
 }
 
+/* > necessary to select only main entries, not the submenu */
+.nav_main > li:hover > a {
+  color: white;
+}
+
 /* main entries in the menu */
 .nav_item {
   position: relative;
@@ -72,6 +77,15 @@ a {
   height: 100%;
   text-align: center;
   vertical-align: end;
+}
+
+.selected {
+  border-radius: 6px;
+  background-color: #EED6C4;
+}
+
+.selected a {
+  color: black;
 }
 
 /* --------- SUB NAVBAR----------- */
@@ -109,7 +123,7 @@ a {
 }
 
 .nav_sub li a {
-  color: #000000;
+  color: black;
   font-size: 18px;
 }
 
@@ -258,8 +272,7 @@ main {
   justify-content: center;
 }
 
-
-/* -------------- ALL CATEGORIES PAGE ------------------------------------------- */
+/* -------------- FICTION PAGE ------------------------------------------- */
 #submenu {
   display: flex;
   justify-content: space-around;
@@ -293,21 +306,13 @@ main {
 
 .sup_category_headline {
   padding: 3px 12px;
-  color: #EED6C4;
+  color: black;
+  background-color: #EED6C4;
   border-radius: 0px 0px 6px 6px;
   border: 4px solid black;
   position: relative;
   top: -4px;
 }
-
-.sup_category_headline:hover {
-  background-color: #EED6C4;
-  color: black;
-}
-
-
-/* -------------- CATEGORY PAGE ------------------------------------------- */
-
 
 
 /* -------------- BOOK DETAIL PAGE ------------------------------------------- */
@@ -315,6 +320,13 @@ main {
 
 
 /* -------------- NOT IMPLEMENTED PAGE ------------------------------------------- */
+#not_implemented_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #not_implemented_headline {
   color: #EED6C4;
 }
