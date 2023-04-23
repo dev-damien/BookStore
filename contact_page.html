@@ -5,10 +5,163 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Contact Page</title>
+  <link rel="stylesheet" href="styles/styles.css" type="text/css">
 </head>
 
 <body>
+  <!-- ______ HEADER ________________________________________________________________________________________________________________________ -->
+  <header>
+    <nav class="navbar_header">
+      <!-- Main LOGO -->
+      <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo of this Bookstore"></a>
 
+      <!-- NAVIGATION BAR -->
+      <ul class="nav_main">
+        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item" id="fiction_menu">
+          <a href="fiction_page.html">Fiction</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="fiction_page.html#fiction_c1">Literary Fiction</a></li>
+            <li><a href="fiction_page.html#fiction_c2">Romance</a></li>
+            <li><a href="fiction_page.html#fiction_c3">Science Fiction</a></li>
+            <li><a href="fiction_page.html#fiction_c4">Fantasy</a></li>
+            <li><a href="fiction_page.html#fiction_c5">Mystery/Thriller</a></li>
+            <li><a href="fiction_page.html#fiction_c6">Horror</a></li>
+            <li><a href="fiction_page.html#fiction_c7">Historical Fiction</a></li>
+            <li><a href="fiction_page.html#fiction_c8">Young Adult</a></li>
+          </ul>
+        </li>
+        <li class="nav_item" id="nonfiction_menu">
+          <a href="non_fiction_page.html">Non-Fiction</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="not_implemented_page.html">Biographies and Memoirs</a></li>
+            <li><a href="not_implemented_page.html">Self-help</a></li>
+            <li><a href="not_implemented_page.html">History</a></li>
+            <li><a href="not_implemented_page.html">Science and Technology</a></li>
+            <li><a href="not_implemented_page.html">Politics and Current Affairs</a></li>
+            <li><a href="not_implemented_page.html">Travel</a></li>
+            <li><a href="not_implemented_page.html">Cooking and Food</a></li>
+            <li><a href="not_implemented_page.html">Business and Finance</a></li>
+            <li><a href="not_implemented_page.html">Art and Photography</a></li>
+          </ul>
+        </li>
+        <li class="nav_item" id="children_menu">
+          <a href="children_page.html">Children's Books</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="not_implemented_page.html">Picture Books</a></li>
+            <li><a href="not_implemented_page.html">Early Readers</a></li>
+            <li><a href="not_implemented_page.html">Chapter Books</a></li>
+            <li><a href="not_implemented_page.html">Middle Grade</a></li>
+            <li><a href="not_implemented_page.html">Young Adult</a></li>
+          </ul>
+        </li>
+        <li class="nav_item" id="references_menu">
+          <a href="references_page.html">Reference Books</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="not_implemented_page.html">Dictionaries</a></li>
+            <li><a href="not_implemented_page.html">Encyclopedias</a></li>
+            <li><a href="not_implemented_page.html">Atlases</a></li>
+            <li><a href="not_implemented_page.html">Thesauruses</a></li>
+            <li><a href="not_implemented_page.html">Almanacs</a></li>
+          </ul>
+        </li>
+        <li class="nav_item" id="textbooks_menu">
+          <a href="textbooks_page.html">Textbooks</a>
+          <!-- SUBMENU -->
+          <ul class="nav_sub">
+            <li><a href="not_implemented_page.html">Math and Science</a></li>
+            <li><a href="not_implemented_page.html">Social Sciences</a></li>
+            <li><a href="not_implemented_page.html">Humanities</a></li>
+            <li><a href="not_implemented_page.html">Professional and Technical</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- 
+On mobile devices, position each input and its respective label on different lines 
+(except labels for individual checkboxes and radios)
+At the end of the form, add two buttons: submit and reset
+Note that you have to set the name, id, etc. of the input elements properly. 
+Except for the "Note" field (and two buttons at the bottom of course), 
+all other fields are required.
+ -->
+  <main>
+    <div id="contact_main">
+      <h1>Contact Us</h1>
+      <form action="form-processing" method="post" id="contact_form">
+        <div>
+          <label class="text_label" for="contactPurpose">Contact Purpose:</label>
+          <select id="contactPurpose" name="contactPurpose">
+            <option value="">Select your reason</option>
+            <option value="1">I want to sell books</option>
+            <option value="2">I want to buy books</option>
+          </select>
+        </div>
+        <div>
+          <label class="text_label" for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
+          <label class="text_label" for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label class="text_label" for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="\+[0-9]{2}[0-9]{7,}"
+            title="Country code and individual number required (+XX XXXXXX...)" required>
+        </div>
+        <div>
+          <p>Contact Preferences:</p>
+          <div>
+            <input type="checkbox" id="contact1" name="contact1" value="Email">
+            <label for="contact1"> By email</label><br>
+          </div>
+          <div>
+            <input type="checkbox" id="contact2" name="contact2" value="Phone">
+            <label for="contact2"> By Phone</label>
+          </div>
+        </div>
+        <div>
+          <p>Receive weekly Newsletter:</p>
+          <div>
+            <input type="radio" id="yes" name="newsletter" value="Yes" checked="checked">
+            <label for="yes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" id="no" name="newsletter" value="No">
+            <label for="no">No</label><br>
+          </div>
+        </div>
+        <div id="form_notes">
+          <p><label for="notes">Extra Notes</label></p>
+          <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+        </div>
+        <div id="form_buttons">
+          <input id="reset_btn" class="form_btn" type="reset" value="Reset">
+          <input id="submit_btn" class="form_btn" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- ______ FOOTER ________________________________________________________________________________________________________________________ -->
+  <footer>
+    <nav>
+      <ul class="navbar_footer">
+        <li><a href="not_implemented_page.html">About Us</a></li>
+        <li><a href="not_implemented_page.html">Privacy Policy</a></li>
+        <li><a href="not_implemented_page.html">Terms</a></li>
+        <li><a href="not_implemented_page.html">Copyright</a></li>
+        <li><a href="contact_page.html">Contact Us</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 
 </html>

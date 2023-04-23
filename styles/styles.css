@@ -6,6 +6,7 @@
 
 html,
 body {
+  margin: 0;
   height: 100%;
 }
 
@@ -138,6 +139,20 @@ a {
   display: block;
 }
 
+/* --------- MOBILE TWEAKS ----------- */
+@media only screen and (max-width: 960px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .navbar_header {
+    padding: 0px;
+  }
+
+  header {
+    width: 100vw;
+  }
+}
 
 
 /* -------------- FOOTER ------------------------------------------- */
@@ -456,6 +471,98 @@ main {
 
 .book_details_description section {
   margin: 9px 0px;
+}
+
+/* -------------- CONTACT US PAGE ------------------------------------------- */
+#contact_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 21px;
+  border: 4px solid black;
+  background-color: #EED6C4;
+}
+
+#contact_main input {
+  font-size: 18px;
+}
+
+#contact_main p {
+  font-size: 18px;
+}
+
+#contact_main select {
+  font-size: 18px;
+}
+
+#contact_main textarea {
+  font-size: 16px;
+}
+
+#contact_form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact_form>div {
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+label {
+  display: inline-block;
+  font-size: 18px;
+  margin: 3px 12px 3px 3px;
+}
+
+.text_label {
+  width: 150px;
+}
+
+#contact1 {
+  margin-left: 12px;
+}
+
+#yes {
+  margin-left: 12px;
+}
+
+#form_notes {
+  flex-direction: column;
+}
+
+#form_buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end ;
+}
+
+.form_btn {
+  width: 120px;
+  padding: 12px 21px;
+  border-radius: 30px;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+#reset_btn {
+  background-color: lightgray;
+}
+#reset_btn:hover {
+  background-color: orangered;
+}
+
+#submit_btn {
+  background-color: #4CBB17;
+}
+#submit_btn:hover {
+  background-color: green;
 }
 
 /* -------------- NOT IMPLEMENTED PAGE ------------------------------------------- */
