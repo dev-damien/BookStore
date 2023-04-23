@@ -331,7 +331,8 @@ main {
 
 .card_author {
   font-size: 14px;
-  font-style: italic
+  font-style: italic;
+  font-family: 'Crimson Text', serif;
 }
 
 /* when hoverd over one card */
@@ -691,7 +692,7 @@ label {
 
 /* --------- MOBILE TWEAKS ----------- */
 @media only screen and (max-width: 960px) {
-  #contact_form > div {
+  #contact_form>div {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -699,7 +700,7 @@ label {
   #contact2 {
     margin-left: 12px;
   }
-  
+
   #no {
     margin-left: 12px;
   }
