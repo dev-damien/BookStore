@@ -1,0 +1,2 @@
+issues:
+subcategory entries go brrr when window is resized to smaller size

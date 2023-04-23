@@ -59,7 +59,7 @@ a {
 }
 
 /* > necessary to select only main entries, not the submenu */
-.nav_main > li:hover > a {
+.nav_main>li:hover>a {
   color: white;
 }
 
@@ -106,7 +106,7 @@ a {
   background-color: #EED6C4;
   position: absolute;
   top: 42px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 9px;
   z-index: 10;
 }
@@ -214,6 +214,7 @@ main {
   box-shadow: 0 3px 3px black;
   transition: all 0.2s;
   border: 2px solid black;
+  height: 385px;
 }
 
 .card_content {
@@ -228,6 +229,7 @@ main {
   border-radius: 9px;
   margin: 21px 30px 12px 30px;
   width: 180px;
+  height: 270px;
 }
 
 .card_details {
@@ -244,6 +246,9 @@ main {
   font-weight: bold;
   text-align: center;
   margin-bottom: 6px;
+  width: 210px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card_author {
@@ -279,7 +284,7 @@ main {
   padding: 21px 12px;
 }
 
-#submenu li a{
+#submenu li a {
   padding: 6px 9px;
   border: 2px solid black;
   border-radius: 18px;
@@ -287,7 +292,7 @@ main {
   color: black;
 }
 
-#submenu li a:hover{
+#submenu li a:hover {
   background-color: #bea999;
 }
 
@@ -317,7 +322,141 @@ main {
 
 /* -------------- BOOK DETAIL PAGE ------------------------------------------- */
 
+/* breadcrumb navigation bar */
+.breadcrumb_container {
+  margin: 21px;
+  display: flex;
+  justify-content: center;
+}
 
+.breadcrumb {
+  padding: 6px 12px;
+  font-size: 18px;
+  margin: 0px 12px;
+}
+
+.breadcrumb_link {
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: #EED6C4;
+}
+
+.breadcrumb_link:hover {
+  background-color: #c6b2a2;
+}
+
+.breadcrumb_book {
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: #483434;
+  color: white;
+}
+
+/* main part of page */
+.book_details {
+  border: 4px solid black;
+  border-radius: 30px;
+  background-color: #EED6C4;
+  padding: 21px;
+  box-shadow: 0px 6px 12px;
+}
+
+.book_container_top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+/* images */
+.images_all_container {
+  display: flex;
+  align-items: center;
+}
+
+.image_big {
+  width: 450px;
+  height: 636px;
+  border-radius: 12px;
+  border: 2px solid black;
+  display: inline-block
+}
+
+.images_small_container {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 21px;
+  margin-left: 30px;
+  background-color: #d7c1b0;
+  align-items: center;
+  border-radius: 12px;
+  border: 2px solid black;
+
+}
+
+.image_small {
+  margin: 3px;
+  width: 150px;
+  height: 190px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.image_small:hover {
+  transform: scale(3);
+}
+
+.purchase_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.btn_add {
+  padding: 21px;
+  font-size: 21px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 2px solid black;
+  background-color: green;
+}
+
+/* lower part of page with title and description */
+.book_container_bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.book_details_container {
+  margin-top: 21px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid black;
+  background-color: #d7c1b0;
+  width: 80vw;
+}
+
+.btn_add:hover {
+  box-shadow: 0px 6px 12px;
+}
+
+.book_details_title {
+  font-size: 30px;
+}
+
+.book_details_description {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.book_details_description section {
+  margin: 9px 0px;
+}
 
 /* -------------- NOT IMPLEMENTED PAGE ------------------------------------------- */
 #not_implemented_container {
