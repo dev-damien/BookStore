@@ -141,6 +141,10 @@ a {
 
 /* --------- MOBILE TWEAKS ----------- */
 @media only screen and (max-width: 960px) {
+  #logo {
+    margin-top: 12px;
+  }
+
   .navbar_header {
     padding: 0px;
   }
@@ -193,7 +197,7 @@ a {
     border-radius: 9px;
   }
 
-  .selected a{
+  .selected a {
     color: #FFF3E4;
   }
 
@@ -510,7 +514,7 @@ main {
   padding: 21px;
   font-size: 21px;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 12px;
   border: 2px solid black;
   background-color: green;
 }
@@ -553,12 +557,41 @@ main {
     flex-flow: row wrap;
   }
 
-  .breadcrumb_container li{
+  .breadcrumb_container li {
     margin: 12px 0px;
   }
 
   .book_container_top {
     flex-direction: column;
+  }
+
+  .images_all_container {
+    flex-direction: column;
+  }
+
+  .image_big {
+    width: 80%;
+    height: 100vw;
+  }
+
+  .images_small_container {
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 90%;
+    margin: 12px 0px 21px 0px;
+  }
+
+  .image_small {
+    width: 33%;
+    height: 30vw;
+  }
+
+  .image_small:hover {
+    transform: scale(3);
+  }
+
+  .price {
+    margin-bottom: 9px;
   }
 }
 
@@ -654,6 +687,34 @@ label {
 
 #submit_btn:hover {
   background-color: green;
+}
+
+/* --------- MOBILE TWEAKS ----------- */
+@media only screen and (max-width: 960px) {
+  #contact_form > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #contact2 {
+    margin-left: 12px;
+  }
+  
+  #no {
+    margin-left: 12px;
+  }
+
+  #form_notes {
+    width: 90%;
+  }
+
+  #notes {
+    width: 96%;
+  }
+
+  #contact_form #form_buttons {
+    flex-direction: row;
+  }
 }
 
 /* -------------- NOT IMPLEMENTED PAGE ------------------------------------------- */
