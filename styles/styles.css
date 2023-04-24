@@ -520,6 +520,7 @@ main {
 }
 
 .image_small:hover {
+  transition: all 0.3s;
   transform: scale(3);
 }
 
